@@ -1,267 +1,258 @@
+
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="google-site-verification" content="x7e-7RAbocu4magPYlROyA2UUVXDjGIAuDKu_DKhr68" />
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531257337326657"
-     crossorigin="anonymous"></script>
-	
-	<title>Sithembile Driving School</title>
-	<meta name="description" content="Sithembile Drving School">
-	<meta name="keywords" content="Sithembile Drving School, code 8 , code 10, code 14, driving school near me, code 10 lessons, code 8 lessons, code 14 lessons, driving school in Germistone">
-	
-	<head>
-    <link rel="canonical" href="https://www.sithembiledrivingschool.info">
-		<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Sithembile Driving school",
-  "name": "Sithembile Driving School",
-  "url": "https://www.sithembiledrivingschool.info",
-  "logo": "https://www.sithembiledrivingschool.info",
-  "description": "Driving school in Germistone,"
-}
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sithembile Driving School – The best driving school in Germiston for Code 8, 10, and 14 lessons." />
+  <title>Sithembile Driving School</title>
+  <link rel="canonical" href="https://www.sithembiledrivingschool.info">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0c0c0c;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+      width: 100%;
+      background: linear-gradient(90deg, #000, #111, #000);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 5%;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #00bfff;
+      font-weight: 700;
+    }
+
+    .logo img {
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid #00bfff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00bfff;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-links a {
+      color: #fff;
+      font-size: 1.3rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #00bfff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('images/a.jpeg') no-repeat center center/cover;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #00bfff;
+      margin-bottom: 15px;
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin-bottom: 25px;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .hero .cta-btn {
+      padding: 12px 25px;
+      background: #00bfff;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero .cta-btn:hover {
+      background: #0099cc;
+    }
+
+    /* Animated Car */
+    .car {
+      position: absolute;
+      bottom: 30px;
+      left: -200px;
+      width: 180px;
+      animation: driveAcross 10s linear infinite;
+    }
+
+    @keyframes driveAcross {
+      0% { left: -200px; transform: rotate(0deg); }
+      50% { transform: rotate(2deg); }
+      100% { left: 110%; transform: rotate(0deg); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* About Section */
+    .about {
+      padding: 100px 10%;
+      background: #111;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #00bfff;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: #ccc;
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px 0;
+      color: #777;
+      border-top: 1px solid #111;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .car {
+        width: 120px;
+      }
+    }
+  </style>
 </head>
 
-	<style type="text/css">
-		*{
-			padding: 0;
-			margin: 0;
-			text-decoration: none;
-			list-style: none;
-			box-sizing: border-box;
-		}
-		nav{
-			background: black;
-			height: 80px;
-			width: 100%;
-		}
-		#main-head{
-			font-size: 30px;
-			color: blue;
-			line-height: 80px;
-			background-size: cover;
-			display: inline-block;
-			margin-bottom: 0px;
-			text-align: float left;
-			margin-right: 20px;
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/c.jpeg" alt="Logo">
+      Sithembile Driving School
+    </div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="social-links">
+      <a href="https://web.facebook.com/profile.php?id=61556822535891" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/27792453668" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </nav>
 
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>The Best Driving School in Germiston</h1>
+      <p>Master Code 8, 10 & 14 with Sithembile Driving School — Professional, Reliable, Affordable.</p>
+      <button class="cta-btn" onclick="location.href='#contact'">Book a Lesson</button>
+    </div>
+    <img src="images/car-character.png" class="car" alt="Animated Car">
+  </section>
 
-		}
-		nav ul{
-			float: right;
-			margin-right: 20px;
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Sithembile Driving School, we believe that learning to drive should be safe, enjoyable, and empowering. With certified instructors and modern vehicles, we provide top-quality driving lessons for beginners and advanced learners alike. Whether you’re after Code 8, Code 10, or Code 14 — we’ll help you pass with confidence!</p>
+  </section>
 
-		}
-		nav ul li{
-			display: inline-block;
-			line-height: 80px;
-			margin: 0 5px;
-			position: relative;
-
-		}
-		nav ul li a{
-			color: white;
-			font-size: 20px;
-			text-transform: uppercase;
-			padding: 7px 13px;
-			border-radius: 3px;
-			display: inline-block;
-					
-			}
-			a.active,a:hover{
-				color: white;
-				transition: 0.15s;
-				
-
-			}
-			.checkbtn{
-				font-size: 30px;
-				color: white;
-				float: right;
-				line-height: 80px;
-				margin-right: 40px;
-				cursor: pointer;
-				display: none;
-			}
-			#check{
-				display: none;
-			}
-			
-			nav ul li a:hover{
-				color: white;
-				display: inline-block;
-				background-color: green;
-				padding: 5px;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				transition: 0.15s;
-				opacity: 0.5;
-			}
-			#body-main{
-				background-image: url(images/a.jpeg);
-				background-size: cover;
-			}
-			#tribe{
-				color: white;
-				margin-right: 10px;
-			}
-			#facebook{
-				width: 30px;
-				border-radius: 7px;
-				margin-right: 10px;
-			}
-			#instagram{
-				width: 20px;
-				border-radius: 5px;
-			}
-			#tribe:hover{
-				color: blue;
-				background-color: white;
-				cursor: pointer;
-			}
-		
-		a:hover{
-			color: red;
-			background-color: green,
-			cursor: pointer;
-			opacity: 0.6;
-			transition: 0.17s;
-		}
-		#container{
-			width: 100%;
-			min-height: 100vh;
-			padding: 5%;
-			background-image: url(images/search);
-			background-position: center;
-			background-size: cover;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		.slider-frame{
-		overflow: hidden;
-		width: 800px;
-		margin-left: 400px;
-		margin-top: 20px;
-		height: 700px;
-		margin-left: 360px;
-		margin-top: 20px;
-
-	}
-	#j{
-		width: 800px;
-		border-radius: 5px;
-	}
-	#k{
-		width: 800px;
-		border-radius: 5px;
-	}
-	#l{
-		width: 800px;
-		border-radius: 5px;
-	}
-
-	@-webkit-keyframes slide_animation{
-		0% {left:0px;}
-		10% {left:0px;}
-		20% {left:800px;}
-		30% {left:800px;}
-		40% {left:1600px;}
-		50% {left:1600px;}
-		60% {left:800px;}
-		70% {left:800px;}
-		80% {left:0px;}	
-		90% {left:0px;}
-		100% {left:0px;}
-		
-	}
-	.slide-images{
-		width: 800px;
-		margin: 0 0 0 -800px;
-		position: relative;
-		-webkit-animation-name: slide_animation;
-		-webkit-animation-duration: 20s;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-direction: alternate;
-		-webkit-animation-play-state: running;
-	}
-	.image-container{
-		width: 900px;
-		position: relative;
-		float: left;
-		height: 800px;
-	}
-	.fit-screen{
-		height: 100dvh;
-		
-	}	
-	h5{ color: white;
-	font-size: 20px; 
-}
-#chain{
-	width: 100px;
-	border-radius: 50px;
-	display: inline-block;
-	
-
-
-}
-		h5{ 
-			font-size: 25px;
-			margin-left: 30px;
-		}
-		.hello{
-			color: red;
-		}
-	</style>
-	<link rel="stylesheet" type="text/css" href="http://kit.fontawesome.com/a076d05399">
-</head>
-
-<br>
-<body id="body-main">
-	<div class="fit-screen">
-	 <img id="chain" src="images/c.jpeg"><h1 id="main-head"> Sithembile Driving School </h1>
-	<br>
-	<nav>
-<h5>Sithembile Driving School +27 79 245 3668 The Best Drving School In Germistone. When you want the best come to Sithembile Driving School</h5>
-		
-	<a href="https://web.facebook.com/profile.php?id=61556822535891"><img id="facebook" src="images/facebook.jpg" target="_blank"></a>
-	<ul>
-		<li><a class="active" href="index.html">Home</a></li>
-		<li><a class="hello" href="details.html">About Us</a></li>
-		<li><a class="hello" href="contacts.html">Contacts</a></li>
-	</ul>
-	</nav>
-	<br>
-	<br>
-
-	<div class="slider-frame">
-	<div class="slide-images">
-		
-			
-			<div class="img-container">
-				<img  src="images/mama.jpeg">
-				
-			</div>
-
-			<div class="img-container">
-				<img  src="">
-				
-			</div>
-			
-	</div>
-</div>
-	
-</div>
-	<br>
-	<br>
-
-	<br>
-	<br> 
-	
-	<br>
+  <footer id="contact">
+    <p>📞 Call/WhatsApp: +27 79 245 3668 | 📍 Germiston, South Africa</p>
+    <p>© 2025 Sithembile Driving School. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
