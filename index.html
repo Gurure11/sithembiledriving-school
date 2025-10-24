@@ -218,7 +218,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 65px;
+        top: 100%;
         left: 0;
         width: 100%;
         background: #111;
@@ -232,123 +232,7 @@
         display: flex;
       }
 
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .car {
-        width: 120px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <nav>
-    <div class="logo">
-      <img src="images/c.jpeg" alt="Logo">
-      Sithembile Driving School
-    </div>
-
-    <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
-
-    <ul id="menu">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="details.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <div class="social-links">
-      <a href="https://web.facebook.com/profile.php?id=61556822535891" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/27792453668" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
-  </nav>
-
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>The Best Driving School in Germiston</h1>
-      <p>Master Code 8, 10 & 14 with Sithembile Driving School — Professional, Reliable, Affordable.</p>
-      <button class="cta-btn" onclick="location.href='#contact'">Book a Lesson</button>
-    </div>
-    <img src="images/car-character.png" class="car" alt="Animated Car">
-  </section>
-
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>At Sithembile Driving School, we believe that learning to drive should be safe, enjoyable, and empowering. With certified instructors and modern vehicles, we provide top-quality driving lessons for beginners and advanced learners alike. Whether you’re after Code 8, Code 10, or Code 14 — we’ll help you pass with confidence!</p>
-  </section>
-
-  <footer id="contact">
-    <p>📞 Call/WhatsApp: +27 79 245 3668 | 📍 Germiston, South Africa</p>
-    <p>© 2025 Sithembile Driving School. All rights reserved.</p>
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById('menu').classList.toggle('active');
-    }
-  </script>
-</body>
-</html>
-      
-    /* Animated Car */
-    .car {
-      position: absolute;
-      bottom: 30px;
-      left: -200px;
-      width: 180px;
-      animation: driveAcross 10s linear infinite;
-    }
-
-    @keyframes driveAcross {
-      0% { left: -200px; transform: rotate(0deg); }
-      50% { transform: rotate(2deg); }
-      100% { left: 110%; transform: rotate(0deg); }
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* About Section */
-    .about {
-      padding: 100px 10%;
-      background: #111;
-      text-align: center;
-    }
-
-    .about h2 {
-      color: #00bfff;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .about p {
-      color: #ccc;
-      font-size: 1rem;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    /* Footer */
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 20px 0;
-      color: #777;
-      border-top: 1px solid #111;
-    }
-
-    @media (max-width: 768px) {
-      nav ul {
+      .social-links {
         display: none;
       }
 
@@ -369,11 +253,15 @@
       <img src="images/c.jpeg" alt="Logo">
       Sithembile Driving School
     </div>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="details.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
+
+    <i class="fas fa-bars menu-toggle" id="menu-toggle"></i>
+
+    <ul id="menu">
+      <li><a href="#hero" onclick="closeMenu()">Home</a></li>
+      <li><a href="details.html" onclick="closeMenu()">About Us</a></li>
+      <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
     </ul>
+
     <div class="social-links">
       <a href="https://web.facebook.com/profile.php?id=61556822535891" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -392,18 +280,37 @@
 
   <section id="about" class="about">
     <h2>About Us</h2>
-    <p>At Sithembile Driving School, we believe that learning to drive should be safe, enjoyable, and empowering. With certified instructors and modern vehicles, we provide top-quality driving lessons for beginners and advanced learners alike. Whether you’re after Code 8, Code 10, or Code 14 — we’ll help you pass with confidence!</p>
+    <p>At Sithembile Driving School, we believe that learning to drive should be safe, enjoyable, and empowering. With certified instructors and modern vehicles, we provide top-quality driving lessons for beginners and advanced learners alike. Whether you're after Code 8, Code 10, or Code 14 — we'll help you pass with confidence!</p>
   </section>
 
   <footer id="contact">
-    
     <p>📞 Call/WhatsApp: +27 79 245 3668 | 📍 Germiston, South Africa</p>
     <p>© 2025 Sithembile Driving School. All rights reserved.</p>
   </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    
+    function toggleMenu() {
+      menu.classList.toggle('active');
+    }
+    
+    function closeMenu() {
+      menu.classList.remove('active');
+    }
+    
+    menuToggle.addEventListener('click', toggleMenu);
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const isClickInsideMenu = menu.contains(event.target);
+      const isClickInsideToggle = menuToggle.contains(event.target);
+      
+      if (!isClickInsideMenu && !isClickInsideToggle && menu.classList.contains('active')) {
+        closeMenu();
+      }
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
