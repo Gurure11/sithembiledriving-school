@@ -1,90 +1,218 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4531257337326657"
-     crossorigin="anonymous"></script>
-	<title>Sithembile Driving School</title>
-	<meta name="description" content="Sithembile Drving School">
-	<meta name="keywords" content="Sithembile Drving School, code 8 , code 10, code 14, driving school near me, code 10 lessons, code 8 lessons, code 14 lessons, driving school in Germistone">
-	<style type="text/css">
-		#home{
-			margin-right: 20px;
-		}
-		#home:hover{
-			color: greenyellow;
-			background-color: red;
-			cursor: pointer;
-			transition: 0.18s;
-			opacity: 0.7;
-		}
-		#cont:hover{
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sithembile Driving School</title>
+  <meta name="description" content="Learn to drive safely and confidently with Sithembile Driving School.">
+  <meta name="keywords" content="driving school, code 8, code 10, code 14, driving lessons Germiston, Sithembile Driving School">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-			color: greenyellow;
-			background-color: red;
-			cursor: pointer;
-			transition: 0.18s;
-			opacity: 0.7;
-		}
-		footer{
-			background-color: black;
-			color: white;
-		}
-		body{
-			text-align: center;
-			align-items: center;
-			color: grey;
-		}
-		#a{
-			width: 600px;
-			border-radius: 5px;
-		}
-		h4{
-			color: white;
-			background-color: purple;
-			font-size: 30px;
-		}
-	</style>
+  <!-- Animate.css for character animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #444;
+      background: #f8f8f8;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #7b2ff7, #f107a3);
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #adff2f;
+      transform: scale(1.1);
+    }
+
+    .hero {
+      background: linear-gradient(to bottom right, #7b2ff7, #f107a3);
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .hero button {
+      background: #adff2f;
+      border: none;
+      color: #333;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #fff;
+      color: #7b2ff7;
+    }
+
+    /* Animated characters */
+    .character {
+      position: absolute;
+      bottom: 0;
+      width: 150px;
+      animation: moveCar 10s linear infinite;
+    }
+
+    .character.instructor {
+      left: 5%;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes moveCar {
+      0% { left: -200px; bottom: 20px; }
+      100% { left: 110%; bottom: 20px; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    section h3 {
+      color: #7b2ff7;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 1.5rem 0;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease;
+    }
+
+    section img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    footer a {
+      color: #adff2f;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      color: #f107a3;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+    }
+  </style>
 </head>
+
 <body>
-	<h4>Sithembile Driving School</h4><br>
-	<br>
-	<a id="home" href="index.html">Home</a>
-	<a id="cont" href="contacts.html">Contacts</a><br>
-	<br>
-	<hr>
-	<br>
-<h4>About Us</h4><br>
-<br>
-Welcome to Sithembile Driving School, your premier choice for safe and reliable driving education in Germiston. With over a decade of dedicated service,<br> Sithembile Driving School has been committed to providing top-notch training, using the latest luxurious cars, and employing experienced instructors to ensure<br> our students' success on the road.<br><br>
-<a href="images/b.jpeg"><img id="a" src="images/b.jpeg"></a><br>
-<br>
-<a href="images/mama.jpeg"><img id="a" src="images/mama.jpeg"></a><br>
-<br>
-At Sithembile Driving School, we take pride in our unmatched pass rate for all our students. Our team of instructors is not only highly qualified but also<br> deeply passionate about empowering learners to become confident and responsible drivers. Whether you're a beginner or looking to brush up on your driving<br> skills, we offer comprehensive lessons tailored to meet your individual needs.<br><br>
-<a href="images/c.jpeg"><img id="a" src="images/c.jpeg"></a><br>
-<br>
 
+  <header>
+    <h1>Sithembile Driving School</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contacts.html">Contacts</a>
+    </nav>
+  </header>
 
-We specialize in offering classes for various license codes, including Code 8, Code 10, and Code 14. From mastering the basics of road safety to advanced <br>driving techniques, our curriculum covers all aspects required to navigate the streets with confidence.<br><br>
-<a href="images/d.jpeg"><img id="a" src="images/d.jpeg"></a><br>
-<br>
+  <section class="hero">
+    <h2 class="animate__animated animate__fadeInDown">Learn to Drive with Confidence 🚗</h2>
+    <p class="animate__animated animate__fadeInUp">
+      Your journey to becoming a skilled and responsible driver starts here.
+      Join Sithembile Driving School — the trusted name in Germiston for over a decade.
+    </p>
+    <button onclick="window.location.href='contacts.html'">Book a Lesson</button>
 
+    <!-- Animated Characters -->
+    <img src="https://cdn-icons-png.flaticon.com/512/743/743922.png" class="character instructor" alt="Instructor">
+    <img src="https://cdn-icons-png.flaticon.com/512/1995/1995515.png" class="character" alt="Animated Car">
+  </section>
 
-Additionally, we understand that booking a driving test can be a daunting task. That's why we provide assistance in scheduling driving tests, ensuring a <br>hassle-free experience for our students.<br><br>
-<a href="images/e.jpeg"><img id="a" src="images/e.jpeg"></a><br>
-<br>
+  <section>
+    <h3>About Us</h3>
+    <p>
+      Welcome to Sithembile Driving School, your premier choice for safe and reliable driving education in Germiston.
+      With over a decade of dedicated service, we pride ourselves in offering top-notch training using modern vehicles and expert instructors.
+    </p>
+    <img src="images/b.jpeg" alt="Driving Lesson">
+    <p>
+      Our instructors are patient, professional, and committed to your success — whether you're learning Code 8, 10, or 14.
+    </p>
+    <img src="images/mama.jpeg" alt="Instructor">
+    <p>
+      We assist with driving test bookings and ensure a stress-free experience. Safety, professionalism, and excellence are at the heart of what we do.
+    </p>
+    <img src="images/d.jpeg" alt="Students practicing">
+  </section>
 
-
-At Sithembile Driving School, safety, professionalism, and excellence are at the core of everything we do. Join us on the journey towards becoming a skilled <br>and responsible driver. Contact us today to embark on your driving education with Sithembile Driving School.<br><br>
-<a href="images/a.jpeg"><img id="a" src="images/a.jpeg"></a><br>
-<br>
-<footer>
-	<br>
-	<a id="home" href="index.html">Home</a>
-	<a id="cont" href="contacts.html">Contacts</a><br>
-	<br>
-	&copy Sithembile Driving School 2024.<br>
-</footer>
+  <footer>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="contacts.html">Contacts</a>
+    </p>
+    <p>&copy; 2025 Sithembile Driving School. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
